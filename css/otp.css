@@ -1,0 +1,103 @@
+/* General Container Styling */
+.forgetPasswordContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Container */
+.forgetPasswordContainer .container {
+    max-width: 400px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.forgetPasswordContainer h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Input Field */
+.forgetPasswordContainer .otp input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+    transition: border 0.3s ease;
+}
+
+/* Input Error Styling */
+.forgetPasswordContainer .otp .otpError {
+    border-color: #e63946; /* Red border for error */
+    background-color: #ffe5e5;
+}
+
+/* Buttons */
+.forgetPasswordContainer .submitOtp button {
+    width: 48%;
+    margin: 5px 1%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff; /* Primary button color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.forgetPasswordContainer .submitOtp button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.forgetPasswordContainer .submitOtp .buttons:nth-child(2) {
+    background-color: #28a745; /* Green for Re-Generate OTP */
+}
+
+.forgetPasswordContainer .submitOtp .buttons:nth-child(2):hover {
+    background-color: #218838;
+}
+
+/* Error Message */
+.forgetPasswordContainer .errorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+    .forgetPasswordContainer .container {
+        padding: 20px;
+    }
+
+    .forgetPasswordContainer h3 {
+        font-size: 20px;
+    }
+
+    .forgetPasswordContainer .submitOtp button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
